@@ -1,0 +1,176 @@
+/* reset do site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Ajuste do container*/
+.container{
+    width: 100%;
+}
+
+/* ajustes do header */
+.menus {
+    display: flex;
+    gap: 45px;
+    margin-left: 714px;
+    margin-top: 13px;
+    color: #272C30;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+header > h1{
+    margin-left: 278px;
+    margin-bottom: 10px;
+}
+
+header a:hover{
+    color: #272C30;
+}
+
+header a:visited{
+    color: #272C30;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* fim dos ajustes do header */
+
+/* ajustes do main */
+/* ajustes da coluna 1 */
+main{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.blogs{
+    flex-direction: column;
+    width: 711px;
+    margin-top: 48px;
+}
+
+img{
+    width: 711px;
+}
+
+.blogs > p{
+    margin: 20px 0;
+}
+
+.blogs > h2{
+    margin-top: 20px;
+}
+
+.blogs a{
+    text-decoration: none;
+    color: #333333;
+} 
+
+/* fim dos ajustes da coluna 1 */
+
+/* ajustes da coluna 2  */
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: 28px;
+    margin-left: 48px;
+}
+
+/* box busca */
+.box-busca{
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 48px;
+}
+
+form > button{
+    background-color: #37A1F7;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+form > input{
+    padding: 5px 10px;
+    height: 30px;
+}
+/* fim da box de busca */
+
+/* box categoria */
+.box-categoria{
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box-categoria a{
+    text-decoration: none;
+    color: #4A4545;
+}
+
+.box-categoria p{
+    margin-left: -8px;
+}
+
+.box-categoria h2{
+    margin-left: -8px;
+}
+
+/* fim da box de categoria */
+
+/* box de tags */
+.box-tags{
+    border: 1px solid black;
+    padding: 20px;
+    width: 296px;
+}
+
+.tags{
+    background-color: #d9d9d9;
+    padding: 5px;
+    margin: 3px;
+    margin-left: 20px;
+    width: 68px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #272C30;
+}
+
+.box-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+/* fim da box de tags */
+/* fim dos ajustes do main e da coluna 2  */
+
+/* ajuste do footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+/* fim dos ajustes do footer */
