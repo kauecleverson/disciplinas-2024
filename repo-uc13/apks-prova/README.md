@@ -10,10 +10,10 @@ mudar de forma imprevisível.
 == igualdade
 != diferente
 
-> maior que
-> <menor que
-> = maior ou igual
-> <=menor ou igual
+">"maior que
+"<"menor que
+"<=" maior ou igual
+"<"=menor ou igual
 
 ## Operadores lógicos
 
@@ -23,13 +23,13 @@ mudar de forma imprevisível.
 
 ## Operadores Aritméticos
 
-\*Multiplicação
-/ Divisão
+"\*"Multiplicação
+"/"Divisão
 
-- adição
-  % resto
-  -subtração 
-  = igual
+"+" adição
+"%" resto
+"-"subtração
+"="igual
 
 ## Variaveis
 
