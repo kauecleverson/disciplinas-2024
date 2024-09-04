@@ -1,0 +1,74 @@
+
+body{
+    font-family: Arial, sans-serif ; /*Define uma fonte para o texto do body*/
+    margin: 0 ; /*define a distância entre elementos*/
+    padding: 0; /*define a margem entre elemento e a borda*/
+    background-color: #f0f0f0; /*define a cor de fundo do body*/
+    box-sizing: border-box; /*usado para incluir borda na quantidade de pixels*/
+
+}
+
+.container{
+    width: 90%; /*define a largura do container*/
+    margin: 0 auto; /*usado para centralizar o container*/
+    background-color: #fff; /*deefiniu a cor do container*/
+    padding: 20px; /*margem entre elemento e borda*/
+    border-radius: 8px; /*usado para arredondar as extrenidades do container*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*usado para sombrear as bordas do container*/
+}
+
+
+.box{
+    border: 1px solid #ddd; /*definiu uma borda para a classe card*/
+    border-radius: 8px; /*arredondou as extremidades dos elementos com plasse card*/
+    padding: 10px; /*definiu o espaçamento entre elemento e borda*/
+    margin: 10px 0; /*definiu espaçamento entre elementos*/
+    background-color: #fafafa; /*definiua a cor de fundo da box*/
+
+}
+
+
+.column{
+    width: 48%; /*definiu a largura dos elementos da classe*/
+}
+
+.two-columns{
+    display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
+    justify-content: space-between; /*criou espaços iguais entre os elementos, sendo espaços responsivos*/
+}
+
+fieldset{
+    display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
+    flex-direction: column; /* organiza os elementos dentro do fieldset em uma coluna */
+    gap: 5px; /* definiu um vão de 5 pixels entre os elementos filhos*/
+    border: 1px solid #ddd; /*definiu uma borda de 1 pixel cinza*/
+    border-radius: 4px; /*arrendonda a borda do fieldset*/
+}
+
+legend{
+    font-weight: bold; /*deixa o texto da legenda em negrito */
+}
+button{
+    padding: 10px; /*define a margem entre elemento e a borda com 10 pixels*/
+    border: 1px solid ;  /*definiu uma borda de 1 pixel */
+    border-radius: 3px; /*arrendonda a borda do botão*/
+}
+
+textarea, input{
+    display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
+    border-radius: 3px; /*arrendonda a borda do input e da área para inserir texto*/
+    padding: 7px; /*define a margem entre elemento e a borda com 7 pixels*/
+    border: 1px solid #000; /*definiu uma borda para o input e para a área para inserir texto*/
+}
+
+#opcao1{width: 1000px;} /* define a largura do elemento com ID "opcao1" como 1000 pixels */
+
+#opcao2{width: 1000px;} /* define a largura do elemento com ID "opcao2" como 1000 pixels */
+
+#opcao3{width: 1000px;} /* define a largura do elemento com ID "opcao3" como 1000 pixels */
+
+#item1{width: 1000px;} /*define a largura do elemento com ID "item1" como 1000 pixels */
+
+#item2{width: 1000px;} /*define a largura do elemento com ID "item2" como 1000 pixels */
+
+#item3{width: 1000px;} /*define a largura do elemento com ID "item3" como 1000 pixels */

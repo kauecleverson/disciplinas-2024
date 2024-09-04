@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, sans-serif ; /*Define uma fonte para o texto do body*/
+    margin: 0 ; /*define a distância entre elementos*/
+    padding: 0; /*define a margem entre elemento e a borda*/
+    background-color: #f0f0f0; /*define a cor de fundo do body*/
+    box-sizing: border-box; /*usado para incluir borda na quantidade de pixels*/
+
+}
+
+.container{
+    width: 90%; /*define a largura do container*/
+    margin: 0 auto; /*usado para centralizar o container*/
+    background-color: #fff; /*deefiniu a cor do container*/
+    padding: 20px; /*margem entre elemento e borda*/
+    border-radius: 8px; /*usado para arredondar as extrenidades do container*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*usado para sombrear as bordas do container*/
+}
+
+.box{
+    border: 1px solid #ddd; /*definiu uma borda para a classe box */
+    border-radius: 8px; /*arredondou as extremidades dos elementos com classe box*/
+    padding: 10px; /*definiu o espaçamento entre elemento e borda*/
+    margin: 10px 0; /*definiu espaçamento entre elementos*/
+    background-color: #fafafa; /*definia a cor de fundo da box*/
+
+}
+
+caption {
+    text-align: center; /* Centraliza o texto da legenda da tabela */
+    font-weight: bold;  /* Aplica negrito ao texto da legenda */
+}
+
+table {
+    border-spacing: 0;           /* Remove o espaçamento entre as células da tabela */
+    border-collapse: collapse;   /* Faz as bordas das células se fundirem quando adjacentes */
+    text-align: left;            /* Alinha o conteúdo das células à esquerda */
+}
+
+table td {
+    border: 1px solid #ddd; /* Adiciona uma borda fina e cinza ao redor das células */
+    width: 710px;           /* Define a largura das células de dados */
+    height: 35px;           /* Define a altura das células de dados */
+    padding: 5px;           /* Adiciona um espaçamento interno nas células de dados */
+}
+
+table th {
+    width: 1000px;          /* Define a largura das células de cabeçalho */
+    border: 1px solid #dddddd; /* Adiciona uma borda fina e cinza ao redor das células de cabeçalho */
+    background-color: #f0f0f0; /* Define a cor de fundo das células de cabeçalho */
+    height: 30px;           /* Define a altura das células de cabeçalho */
+    padding: 5px;           /* Adiciona um espaçamento interno nas células de cabeçalho */
+}
+
+.box thead {
+    background-color: #adadad; /* Define a cor de fundo para o cabeçalho (thead) das tabelas dentro da classe .box */
+}
+
