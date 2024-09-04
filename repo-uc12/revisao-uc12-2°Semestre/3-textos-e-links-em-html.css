@@ -1,0 +1,71 @@
+
+body{
+    font-family: Arial, sans-serif ; /*Define uma fonte para o texto do body*/
+    margin: 0 ; /*define a distância entre elementos*/
+    padding: 0; /*define a margem entre elemento e a borda*/
+    background-color: #f0f0f0; /*define a cor de fundo do body*/
+    box-sizing: border-box; /*usado para incluir borda na quantidade de pixels*/
+
+}
+
+.container{
+    width: 90%; /*define a largura do container*/
+    margin: 0 auto; /*usado para centralizar o container*/
+    background-color: #fff; /*deefiniu a cor do container*/
+    padding: 20px; /*margem entre elemento e borda*/
+    border-radius: 8px; /*usado para arredondar as extrenidades do container*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*usado para sombrear as bordas do container*/
+}
+
+.card{
+    border: 1px solid #ddd; /*definiu uma borda para a classe card*/
+    border-radius: 8px; /*arredondou as extremidades dos elementos com plasse card*/
+    padding: 10px; /*definiu o espaçamento entre elemento e borda*/
+    margin: 10px 0; /*definiu espaçamento entre elementos*/
+    background-color: #fafafa; /*definiua a cor de fundo do card*/
+
+}
+
+.card img{
+    width: 100%; /*definiu a largura das imagens da classe card*/
+    border-radius: 5px; /*arredonda as extremidades das imagens*/
+}
+
+.column{
+    width: 48%; /*definiu a largura dos elementos da classe*/
+}
+
+.two-columns{
+    display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
+    justify-content: space-between; /*criou espaços iguais entre os elementos, sendo espaços responsivos*/
+}
+
+.three-columns{
+    display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
+    justify-content: space-between; /*criou espaços iguais entre os elementos, sendo espaços responsivos*/
+
+}
+
+.columns-third{
+    width: 32%; /*define a largura dos elementos com esta classe*/
+}
+
+code{
+    background-color: #f9f9f9; /*define a cor de fundo da classe code*/
+    padding: 2px 4px; /*deiniu espaçamento entre elemento e borda*/
+    border-radius: 3px; /*arredondou as bordas da classe code*/
+}
+
+blockquote{
+    border-left: 4px solid #ddd; /*definiu a borda esquerda da classe*/
+    margin: 10px 0; /*definiu espaçamento entre elementos ao lado*/
+    padding-left: 10px; /*definiu o espaçemto a esquerda entre o elemento e a borda*/
+    color: #666; /*definiu a cor de texto*/
+    font-style: italic; /*estilizou a fonte para itálico*/
+}
+
+.highlight{
+    background-color: #ffe0b3; /*definiu a cor de fundo da classe*/
+    padding: 5px; /*definiu o espaçamento entre o elemento e sua borda*/
+    border-radius: 5px; /*arredondou as extremidades da borda*/
+}
