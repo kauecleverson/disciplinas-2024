@@ -1,4 +1,3 @@
-
 body{
     font-family: Arial, sans-serif ; /*Define uma fonte para o texto do body*/
     margin: 0 ; /*define a distância entre elementos*/
@@ -40,9 +39,9 @@ body{
 fieldset{
     display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
     flex-direction: column; /* organiza os elementos dentro do fieldset em uma coluna */
-    gap: 5px; /* definiu um vão de 5 pixels entre os elementos filhos*/
+    gap: 7px; /* definiu um vão de 7 pixels entre os elementos filhos*/
     border: 1px solid #ddd; /*definiu uma borda de 1 pixel cinza*/
-    border-radius: 4px; /*arrendonda a borda do fieldset*/
+    border-radius: 5px; /*arrendonda a borda do fieldset*/
 }
 
 legend{
@@ -50,25 +49,19 @@ legend{
 }
 button{
     padding: 10px; /*define a margem entre elemento e a borda com 10 pixels*/
-    border: 1px solid ;  /*definiu uma borda de 1 pixel */
-    border-radius: 3px; /*arrendonda a borda do botão*/
+    border: 1px solid #ddd;  /*definiu uma borda de 1 pixel */
+    border-radius: 5px; /*arrendonda a borda do botão*/
 }
 
 textarea, input{
     display: flex; /*definiu o display como flex-box, deixando os filhos responsivos*/
-    border-radius: 3px; /*arrendonda a borda do input e da área para inserir texto*/
-    padding: 7px; /*define a margem entre elemento e a borda com 7 pixels*/
-    border: 1px solid #000; /*definiu uma borda para o input e para a área para inserir texto*/
+    border-radius: 5px; /*arrendonda a borda do input e da área para inserir texto*/
+    padding: 10px; /*define a margem entre elemento e a borda com 7 pixels*/
+    border: 1px solid #ddd; /*definiu uma borda para o input e para a área para inserir texto*/
 }
 
-#opcao1{width: 1000px;} /* define a largura do elemento com ID "opcao1" como 1000 pixels */
+.column input{
+    width: 39vw; /*define a largura para 39 viewport*/
+}
 
-#opcao2{width: 1000px;} /* define a largura do elemento com ID "opcao2" como 1000 pixels */
-
-#opcao3{width: 1000px;} /* define a largura do elemento com ID "opcao3" como 1000 pixels */
-
-#item1{width: 1000px;} /*define a largura do elemento com ID "item1" como 1000 pixels */
-
-#item2{width: 1000px;} /*define a largura do elemento com ID "item2" como 1000 pixels */
-
-#item3{width: 1000px;} /*define a largura do elemento com ID "item3" como 1000 pixels */
+#opcao1, #opcao2, #opcao3, #item1, #item2, #item3{width: 100%;} /* define a largura do elemento com ID "opcao1" como 1000 pixels */
