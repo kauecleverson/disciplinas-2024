@@ -17,9 +17,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private UserDAO userDAO;
-    private EditText nameEditText, emailEditText, idEditText;
+    private EditText nameEditText, emailEditText, idEditText, sobrenomeEditText, telefoneEditText;
     private TextView usersTextView;
-
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -36,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         emailEditText = findViewById(R.id.emailEditText);
         usersTextView = findViewById(R.id.usersTextView);
         idEditText = findViewById(R.id.idEditText);
+        sobrenomeEditText = findViewById(R.id.sobrenomeEditText);
+        telefoneEditText = findViewById(R.id.telefoneEditText);
 
         userDAO = new UserDAO(this);
         userDAO.open();
@@ -44,10 +45,14 @@ public class MainActivity extends AppCompatActivity {
     public void addLista(View view){
         String name = nameEditText.getText().toString();
         String email = emailEditText.getText().toString();
-        User user = new User(0, name, email);
+        String sobrenome = sobrenomeEditText.getText().toString();
+        int telefone = Integer.valueOf(telefoneEditText.getText().toString());
+        User user = new User(0, name, email, sobrenome, telefone);
         userDAO.addUser(user);
         nameEditText.setText("");
         emailEditText.setText("");
+        sobrenomeEditText.setText("");
+        telefoneEditText.setText("");
     }
 
     public void removeList(View view){
@@ -62,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
             userList.append("ID: ").append(user.getId())
                     .append(", Name: ").append(user.getName())
                     .append(", Email: ").append(user.getEmail())
+                    .append(", Sobrenome: ").append(user.getSobrenome())
+                    .append(", Selefone: ").append(user.getTelefone())
                     .append("\n");
         }
         usersTextView.setText(userList.toString());

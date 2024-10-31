@@ -29,6 +29,7 @@ public class UserDAO {
         ContentValues values = new ContentValues();
         values.put("name", user.getName());
         values.put("email", user.getEmail());
+        values.put("sobrenome", user.getSobrenome());
         database.insert("users", null, values);
     }
 
@@ -42,7 +43,8 @@ public class UserDAO {
                 user.setId(cursor.getInt(cursor.getColumnIndex("id")));
                 user.setName(cursor.getString(cursor.getColumnIndex("name")));
                 user.setEmail(cursor.getString(cursor.getColumnIndex("email")));
-
+                user.setSobrenome(cursor.getString(cursor.getColumnIndex("sobrenome")));
+                user.setTelefone(cursor.getInt(cursor.getColumnIndex("telefone")));
                 users.add(user);
             } while (cursor.moveToNext());
         }
